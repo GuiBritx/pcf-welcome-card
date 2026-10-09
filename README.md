@@ -21,6 +21,159 @@ Atualmente o componente exibe uma interface moderna construída em TypeScript e 
 
 ---
 
+# 🧠 Entendendo a Arquitetura do Projeto
+
+## O que é Power Apps?
+
+Power Apps é uma plataforma da Microsoft para criação de aplicações corporativas utilizando uma abordagem low-code.
+
+Normalmente, as aplicações são desenvolvidas através do Canvas App, utilizando componentes visuais como:
+
+- Botões
+- Labels
+- Galerias
+- Formulários
+- Comboboxes
+
+Essa abordagem acelera o desenvolvimento, porém pode apresentar limitações para cenários mais complexos, especialmente quando há necessidade de:
+
+- Componentes reutilizáveis
+- Interfaces altamente customizadas
+- Experiências modernas de usuário
+- Lógicas avançadas de interação
+- Estruturas de código organizadas
+
+---
+
+## O que é PCF?
+
+PCF significa **Power Apps Component Framework**.
+
+O PCF permite desenvolver componentes personalizados utilizando tecnologias tradicionais de desenvolvimento web, como:
+
+- TypeScript
+- HTML
+- CSS
+- JavaScript
+
+Com isso, é possível criar controles que podem ser reutilizados dentro do Power Apps da mesma forma que um botão ou uma galeria nativa.
+
+Exemplos de componentes que podem ser criados:
+
+- Cards personalizados
+- Dashboards
+- Gráficos
+- Calendários
+- Tabelas avançadas
+- Filtros inteligentes
+- Componentes de busca
+- Interfaces responsivas
+
+---
+
+## O que é o GitHub Copilot neste projeto?
+
+O GitHub Copilot atua como um assistente de desenvolvimento baseado em Inteligência Artificial.
+
+Ele auxilia em atividades como:
+
+- Geração de código
+- Refatoração
+- Criação de componentes
+- Correção de erros
+- Explicação de código
+- Sugestões de arquitetura
+
+Neste projeto o Copilot é utilizado para acelerar o desenvolvimento do componente e permitir uma iteração rápida de novas ideias.
+
+---
+
+## O que é o Live Preview?
+
+Uma das funcionalidades mais interessantes desta arquitetura é o Live Preview.
+
+Ao executar:
+
+```powershell
+yarn.cmd start:watch
+```
+
+o PCF entra em modo de observação.
+
+O fluxo se torna:
+
+```text
+Editar código
+        ↓
+Salvar arquivo
+        ↓
+Build automático
+        ↓
+Atualização automática do preview
+```
+
+Ou seja, não é necessário recompilar manualmente a cada alteração.
+
+Essa experiência é muito semelhante ao desenvolvimento moderno de aplicações React e outros frameworks frontend.
+
+---
+
+## Fluxo de Desenvolvimento Utilizado
+
+```text
+Power Apps Component Framework (PCF)
+                +
+         TypeScript
+                +
+       GitHub Copilot
+                +
+       VS Code Editor
+                +
+      Start Watch Mode
+                ↓
+      Live Preview Local
+```
+
+---
+
+## Por que esta abordagem?
+
+O objetivo é explorar um modelo híbrido entre Low-Code e Pro-Code.
+
+Benefícios:
+
+✅ Componentes reutilizáveis
+
+✅ Melhor organização de código
+
+✅ Versionamento com Git
+
+✅ Desenvolvimento assistido por IA
+
+✅ Maior escalabilidade
+
+✅ Interfaces mais modernas
+
+✅ Menor repetição de lógica
+
+✅ Melhor experiência de usuário
+
+---
+
+## O que este projeto demonstra?
+
+Este repositório demonstra como utilizar Power Apps além dos limites tradicionais de um Canvas App, combinando:
+
+- Power Platform
+- PCF
+- TypeScript
+- GitHub Copilot
+- Desenvolvimento baseado em componentes
+
+para criar uma experiência mais próxima do desenvolvimento frontend profissional.
+
+---
+
 # 🛠 Tecnologias Utilizadas
 
 ## Microsoft Power Apps Component Framework (PCF)
