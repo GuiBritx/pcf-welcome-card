@@ -440,3 +440,22 @@ UX/UI Designer • Power Platform Developer • PCF Learner
 ✅ Primeiro componente criado
 
 🚧 Evolução contínua
+
+
+## Troubleshooting
+
+### npm minimatch error during PCF solution build
+
+If your environment uses Yarn and npm is corrupted, you may receive:
+
+Cannot find module 'minimatch'
+
+The PCF build process automatically executes:
+
+npm install
+
+To bypass this behavior:
+
+dotnet build /p:PcfEnableAutoNpmInstall=false
+
+This skips the automatic npm restore and uses the dependencies already installed by Yarn.
